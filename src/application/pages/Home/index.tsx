@@ -1,11 +1,13 @@
 import {translate, useTranslate} from 'react-polyglot';
 
+import * as S from './style';
+
 const Home = () => {
   const t = useTranslate();
 
   return (
-    <div className="home">
-      <h1>{t('welcome.title')}</h1>
+    <div className="min-h-screen flex flex-col items-center justify-center text-2xl">
+      <S.ProjectName>{t('welcome.title')}</S.ProjectName>
     </div>
   );
 };
