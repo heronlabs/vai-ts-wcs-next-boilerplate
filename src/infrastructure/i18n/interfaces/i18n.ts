@@ -1,5 +1,3 @@
-import {WcsLabelDto} from '../repositories/wcs-label-dto';
-
-export interface I18n {
-  translate(): WcsLabelDto;
+export interface I18n<T> {
+  translate(): T;
 }
