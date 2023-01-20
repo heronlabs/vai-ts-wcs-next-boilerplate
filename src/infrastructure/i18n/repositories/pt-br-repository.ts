@@ -7,6 +7,9 @@ export class PtBrRepository implements I18n<WcsLabelDto> {
       languages: {
         portuguese: 'Português',
       },
+      menu: {
+        home: 'Home',
+      },
     };
   }
 }
