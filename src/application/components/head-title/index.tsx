@@ -28,7 +28,7 @@ const HeadTitle = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, nofollow" />
       <meta name="title" content={company.name} />
-      <meta name="description" content="Mobilithas Web Client Site" />
+      <meta name="description" content={`${company.name} Web Client Site`} />
       <meta name="keywords" content={company.keyWords} />
     </Head>
   );
