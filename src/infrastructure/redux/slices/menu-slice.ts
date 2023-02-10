@@ -10,7 +10,7 @@ export const menuSlice = createSlice({
   name: 'menu',
   initialState: {
     open: false,
-    currentPage: MenuNames.HOME,
+    currentPage: MenuNames.INDEX,
   },
   reducers: {
     goToPage: (

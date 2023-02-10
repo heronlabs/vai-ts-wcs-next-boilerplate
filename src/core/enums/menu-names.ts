@@ -1,3 +1,3 @@
 export enum MenuNames {
-  HOME = 'home',
+  INDEX = 'index',
 }

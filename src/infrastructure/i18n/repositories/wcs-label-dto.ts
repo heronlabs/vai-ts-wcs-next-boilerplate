@@ -3,6 +3,6 @@ export type WcsLabelDto = {
     portuguese: string;
   };
   menu: {
-    home: string;
+    index: string;
   };
 };

@@ -7,6 +7,7 @@ export class PtBrCollection implements I18n<WcsDataDto> {
       company: {
         name: 'my-project',
         keyWords: 'my,project',
+        socialMedias: [],
       },
     };
   }

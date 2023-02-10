@@ -12,18 +12,18 @@ const HeadTitle = () => {
 
   const {currentPage} = useSelector((state: RootState) => state.menu);
 
-  const filterPageTitle = (givenCurrentPage: MenuNames): string => {
+  const filterPageTitle = (): string => {
     return [
       {
-        name: MenuNames.HOME,
-        label: t('menu.home'),
+        name: MenuNames.INDEX,
+        label: t('menu.index'),
       },
-    ].filter(socialMedia => socialMedia.name === givenCurrentPage)[0].label;
+    ].filter(menuItem => menuItem.name === currentPage)[0].label;
   };
 
   return (
     <Head>
-      <title>{`${company.name} - ${filterPageTitle(currentPage)}`}</title>
+      <title>{`${company.name} - ${filterPageTitle()}`}</title>
       <link rel="icon" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, nofollow" />
