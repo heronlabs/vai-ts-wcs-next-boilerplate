@@ -1,8 +1,10 @@
+import {MenuNames} from '../../../core/enums/menu-names';
+
 export type WcsLabelDto = {
   languages: {
     portuguese: string;
   };
   menu: {
-    index: string;
+    [MenuNames.INDEX]: string;
   };
 };

@@ -9,4 +9,7 @@ export const fonts = {
   openSans: 'Open Sans',
 };
 
-export const images = {};
+export const images = {
+  favicon:
+    'https://public-static-heronlabs-sandbox.s3.amazonaws.com/icons/favicon.ico',
+};

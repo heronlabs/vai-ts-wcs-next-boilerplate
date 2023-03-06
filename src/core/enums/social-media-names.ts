@@ -7,4 +7,6 @@ export enum SocialMediaNames {
   INSTAGRAM = 'instagram',
   MEDIUM = 'medium',
   GITHUB = 'github',
+  DISCORD = 'discord',
+  WEBSITE = 'website',
 }
