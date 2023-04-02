@@ -10,6 +10,6 @@ export const fonts = {
 };
 
 export const images = {
-  favicon:
-    'https://public-static-heronlabs-sandbox.s3.amazonaws.com/icons/favicon.ico',
+  // TODO: Replace with your image
+  favicon: '',
 };
