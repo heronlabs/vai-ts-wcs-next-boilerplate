@@ -9,4 +9,5 @@ export enum SocialMediaNames {
   GITHUB = 'github',
   DISCORD = 'discord',
   WEBSITE = 'website',
+  PINTEREST = 'pinterest',
 }

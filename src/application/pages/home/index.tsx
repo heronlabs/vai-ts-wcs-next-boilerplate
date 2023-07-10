@@ -7,7 +7,7 @@ import * as S from './style';
 const Home = () => {
   const t = useTranslate();
 
-  const {company} = useSelector((state: RootState) => state.locale);
+  const {company} = useSelector((state: RootState) => state.locale.collections);
 
   return (
     <S.Content>

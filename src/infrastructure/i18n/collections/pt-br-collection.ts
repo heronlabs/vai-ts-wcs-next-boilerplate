@@ -6,7 +6,8 @@ export class PtBrCollection implements I18n<WcsDataDto> {
     return {
       company: {
         name: 'my-project',
-        keyWords: 'my,project',
+        shortDescription: 'This is my-project',
+        url: 'https://heronlabs-sandbox.com',
         socialMedias: [],
       },
     };

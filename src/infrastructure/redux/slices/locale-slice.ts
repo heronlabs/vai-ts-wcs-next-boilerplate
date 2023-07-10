@@ -6,7 +6,9 @@ import {WcsDataFactory} from '../../i18n/collections/wcs-data-factory';
 
 export type LocaleStore = {
   currentLanguage: Languages;
-  company: CompanyDto;
+  collections: {
+    company: CompanyDto;
+  };
 };
 
 export const localeSlice = createSlice({
@@ -14,9 +16,10 @@ export const localeSlice = createSlice({
   initialState: () => {
     const locale = Languages.PT_BR;
     const wcsData = WcsDataFactory.make(locale);
+
     return {
       currentLanguage: locale,
-      company: wcsData.company,
+      collections: wcsData,
     };
   },
   reducers: {
@@ -27,7 +30,7 @@ export const localeSlice = createSlice({
       const wcsData = WcsDataFactory.make(locale);
 
       state.currentLanguage = locale;
-      state.company = wcsData.company;
+      state.collections = wcsData;
     },
   },
 });

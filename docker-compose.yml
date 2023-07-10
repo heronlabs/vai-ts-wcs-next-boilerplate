@@ -1,0 +1,21 @@
+version: '3'
+services:
+  myproject-wcs-api:
+    container_name: myproject-wcs-api
+    build:
+      context: .
+      dockerfile: ./Dockerfile.local
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    networks:
+      - myproject-wcs-network
+
+volumes:
+  postgres:
+
+
+networks:
+  myproject-wcs-network:
+    name: myproject-wcs
+    driver: bridge

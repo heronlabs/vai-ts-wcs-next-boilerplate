@@ -12,4 +12,6 @@ export const fonts = {
 export const images = {
   // TODO: Replace with your image
   favicon: '',
+  // TODO: Replace with your image
+  logo: 'https://picsum.photos/156',
 };
