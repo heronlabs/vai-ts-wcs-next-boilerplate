@@ -6,7 +6,10 @@ const nextConfig = {
     unoptimized: true,
   },
   compiler: {
-    styledComponents: true,
+    styledComponents: {
+      ssr: true,
+      displayName: true,
+    },
   },
 };
 
