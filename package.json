@@ -8,8 +8,8 @@
     "start": "next start",
     "lint:check": "gts lint",
     "lint:fix": "gts fix",
-    "docker:build": "docker build -t myproject-wcs-api:latest . -f Dockerfile",
-    "docker:up:api": "docker-compose up -d myproject-wcs-api --build --force-recreate",
+    "docker:build": "docker build -t sandbox-wcs-api:latest . -f Dockerfile",
+    "docker:up:api": "docker-compose up -d sandbox-wcs-api --build --force-recreate",
     "docker:down": "docker-compose down --rmi all"
   },
   "resolutions": {

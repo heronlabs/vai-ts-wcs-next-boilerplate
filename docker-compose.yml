@@ -1,7 +1,7 @@
 version: '3'
 services:
-  myproject-wcs-api:
-    container_name: myproject-wcs-api
+  sandbox-wcs-api:
+    container_name: sandbox-wcs-api
     build:
       context: .
       dockerfile: ./Dockerfile.local
@@ -9,13 +9,13 @@ services:
     ports:
       - '3000:3000'
     networks:
-      - myproject-wcs-network
+      - sandbox-wcs-network
 
 volumes:
   postgres:
 
 
 networks:
-  myproject-wcs-network:
-    name: myproject-wcs
+  sandbox-wcs-network:
+    name: sandbox-wcs
     driver: bridge
